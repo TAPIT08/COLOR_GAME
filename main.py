@@ -103,7 +103,7 @@ def main():
     
     # Save report to file
     os.makedirs('results', exist_ok=True)
-    with open('results/analysis_report.txt', 'w') as f:
+    with open('results/analysis_report.txt', 'w', encoding='utf-8') as f:
         f.write(report)
     print(f"\n✓ Analysis report saved to: results/analysis_report.txt")
     

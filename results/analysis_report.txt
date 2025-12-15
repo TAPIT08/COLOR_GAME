@@ -1,0 +1,70 @@
+================================================================================
+COLOR GAME SIMULATION: ANALYSIS REPORT
+================================================================================
+
+1. SUMMARY STATISTICS
+--------------------------------------------------------------------------------
+Metric                         Fair Game                 Tweaked Game             
+--------------------------------------------------------------------------------
+Mean Profit                    $-79.47                   $-104.84                 
+Median Profit                  $-80.00                   $-104.50                 
+Std Dev Profit                 $110.29                   $108.92                  
+Min Profit                     $-450.00                  $-552.50                 
+Max Profit                     $320.00                   $312.00                  
+Win Rate                       22.07%                    17.24%                   
+Avg House Profit               $79.47                    $104.84                  
+Total House Profit             $794710.00                $1048402.50              
+Avg Rounds Played              100.00                    100.00                   
+Bankruptcy Rate                0.00%                     0.00%                    
+
+2. HOUSE EDGE ANALYSIS
+--------------------------------------------------------------------------------
+Fair Game House Edge:       7.9471%
+Tweaked Game House Edge:    10.4840%
+Difference:                 2.5369%
+
+Interpretation: The tweaked game has a house edge that is 
+2.5369% higher than the fair game.
+
+3. RETURN ON INVESTMENT (ROI)
+--------------------------------------------------------------------------------
+Metric                         Fair Game                 Tweaked Game             
+--------------------------------------------------------------------------------
+Mean ROI                       -7.95                   % -10.48                  %
+Median ROI                     -8.00                   % -10.45                  %
+Std Dev ROI                    11.03                   % 10.89                   %
+
+4. PROFIT DISTRIBUTION ANALYSIS
+--------------------------------------------------------------------------------
+Metric                         Fair Game                 Tweaked Game             
+--------------------------------------------------------------------------------
+Skewness                       0.0436                   -0.0178                 
+Kurtosis                       -0.0428                  0.0334                  
+5th Percentile                 $-260.00                 $-281.00                
+95th Percentile                $100.50                  $70.00                  
+
+5. STATISTICAL HYPOTHESIS TESTING
+--------------------------------------------------------------------------------
+H0: Mean profit in fair game = Mean profit in tweaked game
+H1: Mean profit in fair game ≠ Mean profit in tweaked game
+
+Two-Sample t-test:
+  t-statistic: 16.3665
+  p-value: 0.000000
+  Significant at α=0.05: YES
+
+Mann-Whitney U test (non-parametric):
+  U-statistic: 56309126.0000
+  p-value: 0.000000
+  Significant at α=0.05: YES
+
+6. KEY FINDINGS
+--------------------------------------------------------------------------------
+• The fair game yields an average profit of $-79.47 per session
+• The tweaked game yields an average profit of $-104.84 per session
+• Players lose $25.37 more on average in the tweaked game
+• The house edge increased by 2.5369% in the tweaked version
+• Win rate decreased from 22.07% to 17.24%
+• Statistical tests confirm the difference is significant (p < 0.05)
+
+================================================================================
